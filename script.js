@@ -7,11 +7,12 @@ function randomInt(min,max) {
     max = min
     min = 0
   }
-  
+
+// function to select random number
   var rand = Math.random();
   return Math.floor(rand*max)
 }
-
+//function to obtain random integer any given length of integers
 function getranditem(list) {
   return list[randomInt(list.length)]
 }
@@ -38,8 +39,8 @@ function generatePassword() {
   //confirmation windws of other password criteria
   var useruppercase = window.confirm("Would you like uppercase letters in your password?");
   var userlowercase = window.confirm("Would you like lowercase letters in your password?");
-  var usersymbols = window.confirm("Would you like to symbols in your password?");
-  var usernumbers = window.confirm("Would you like to numbers in your password?");
+  var usersymbols = window.confirm("Would you like symbols in your password?");
+  var usernumbers = window.confirm("Would you like numbers in your password?");
 
   //createded lists of options to help recognize possible inputs
   var listofsymbols = ["~" , "!" , "@" , "#" , "$" , "%" , "^" , "&" , "*" , "(" , ")" , "-"];
